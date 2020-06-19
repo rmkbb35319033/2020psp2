@@ -32,7 +32,7 @@ int main(void)
         AVE_BF=AVE;//VALを求める際に、(N-1)番目の平均を使うためこの位置で(N-1)番目の平均を保存しておく。
         AVE=ave_online(val,AVE,i);//平均を求める
         AVE_2BF=AVE_2;//VALを求める際に、(N-1)番目の２乗の平均を使うためこの位置で(N-1)番目の２乗の平均を保存しておく。
-        AVE_2=ave_online(val*val,AVE_2,i);//２乗の平均を求める
+        AVE_2=ave_online(val*val,AVE_2,i);//２乗の平均を求める。
         VAL=var_online(val,AVE_BF,AVE_2BF,i);//分散を求める
     }
 
