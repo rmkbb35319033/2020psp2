@@ -6,6 +6,7 @@ int main(void)
 {
     double max_val=0,min_val=200;
     double val;
+    int gen;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
@@ -21,8 +22,10 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
+    fgets(buf,sizeof(buf),fp);
+
     while(fgets(buf,sizeof(buf),fp) != NULL){
-        sscanf(buf,"%lf",&val);
+        sscanf(buf,"%d, %lf",&gen,&val);
         if(val>max_val){
             max_val = val;
         }
