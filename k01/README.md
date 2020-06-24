@@ -41,5 +41,29 @@ VALを求める際にはval_onlineの引数に（N-1）番目の平均を入れ�
 
 
 ## 修正履歴
+[20200624comment宮下]
 
-説明は「かきくけこ」だ！
+課題提出お疲れさまでした。修正点がいくつかあります。
+- L31の入力ですがこの課題で使うのは"../sample/heights_male.csv"（標本男性）のデータです。おそらく"heights.csv"を使ってしまっていると思います。"%d","&gen"は不要ですので消しておいてください。
+- L36 変数名を"VAL"としていますがこれは"val"(value)ではなく"variance"「分散」を代入するところです。
+- 提出の際は入出力結果をREADMEに貼って答えと相違ないか確認してからプッシュお願いします。下の形式で出力されるはずです。
+
+'''
+
+input the filename of sample:../sample/heights_male.csv
+
+the filename of sample: ../sample/heights_male.csv
+
+sample mean：173.89
+
+sample variance：25.36
+
+population mean (estimated)：173.89±1.90
+
+population variance (estimated)：28.98
+
+'''
+
+
+
+
