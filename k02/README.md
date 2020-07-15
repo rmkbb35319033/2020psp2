@@ -23,9 +23,9 @@ A県生まれ、B県生まれの男性のデータを標準化し、それぞれ
 そして、標準化された値をp_stdnorm関数に代入して、
 L1=L1*p_stdnorm()の式より、尤度を求めました。
 
-[入力]
+入力
 the filename of sample: c:\Users\kento\Documents\2020psp2\sample\heights_male.csv
-[出力]
+出力
 L_A: 0.000006
 L_B: 0.000002
 
