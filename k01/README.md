@@ -56,21 +56,19 @@ UVAL=29.0
 - L36 変数名を"VAL"としていますがこれは"val"(value)ではなく"variance"「分散」を代入するところです。
 - 提出の際は入出力結果をREADMEに貼って答えと相違ないか確認してからプッシュお願いします。下の形式で出力されるはずです。
 
-'''
-
+```
 input the filename of sample:../sample/heights_male.csv
-
 the filename of sample: ../sample/heights_male.csv
-
 sample mean：173.89
-
 sample variance：25.36
-
 population mean (estimated)：173.89±1.90
-
 population variance (estimated)：28.98
+```
 
-'''
+[20200715comment宮下]
+
+課題提出お疲れさまでした。修正点はありません。k01完了です。
+
 
 
 
