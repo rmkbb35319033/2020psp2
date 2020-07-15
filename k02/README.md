@@ -1,6 +1,5 @@
 # 課題2 レポート
-
-aa83988848 薗田光太郎
+bb35319033 濱江堅登
 
 ## 課題
 
@@ -20,6 +19,15 @@ aa83988848 薗田光太郎
 と計算できる．<img src="/k02/tex/2ec6e630f199f589a2402fdf3e0289d5.svg?invert_in_darkmode&sanitize=true" align=middle width=8.270567249999992pt height=14.15524440000002pt/>は仮定した確率密度関数で，<img src="/k02/tex/27e556cf3caa0673ac49a8f0de3c73ca.svg?invert_in_darkmode&sanitize=true" align=middle width=8.17352744999999pt height=22.831056599999986pt/>はその母数．<img src="/k02/tex/2ec6e630f199f589a2402fdf3e0289d5.svg?invert_in_darkmode&sanitize=true" align=middle width=8.270567249999992pt height=14.15524440000002pt/>が正規分布なら，<img src="/k02/tex/27e556cf3caa0673ac49a8f0de3c73ca.svg?invert_in_darkmode&sanitize=true" align=middle width=8.17352744999999pt height=22.831056599999986pt/>は，平均<img src="/k02/tex/07617f9d8fe48b4a7b3f523d6730eef0.svg?invert_in_darkmode&sanitize=true" align=middle width=9.90492359999999pt height=14.15524440000002pt/>と分散<img src="/k02/tex/e6718aa5499c31af3ff15c3c594a7854.svg?invert_in_darkmode&sanitize=true" align=middle width=16.535428799999988pt height=26.76175259999998pt/>である．
 
 ## ソースコードの説明
+A県生まれ、B県生まれの男性のデータを標準化し、それぞれy1,y2に値を格納
+そして、標準化された値をp_stdnorm関数に代入して、
+L1=L1*p_stdnorm()の式より、尤度を求めました。
+
+[入力]
+the filename of sample: c:\Users\kento\Documents\2020psp2\sample\heights_male.csv
+[出力]
+L_A: 0.000006
+L_B: 0.000002
 
 ## 修正履歴
 

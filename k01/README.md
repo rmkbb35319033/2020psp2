@@ -39,6 +39,14 @@ AVE（平均）の中にave_online()で計算したものを返すことによ�
 VALを求める際にはval_onlineの引数に（N-1）番目の平均を入れることに注意した。
 不偏分散については、VALが求まったので、そのまま公式にあてはめて求めた。
 
+[入力]
+the filename of sample: c:\Users\kento\Documents\2020psp2\sample\heights_male.csv
+[出力]
+AVE=173.9
+VAL=25.4
+est ave=173.9
+UVAL=29.0
+
 
 ## 修正履歴
 

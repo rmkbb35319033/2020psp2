@@ -7,10 +7,10 @@ extern double ave_online(double val,double ave,int N);
 extern double var_online(double val, double ave, double square_ave,int N);
 int gen;
 int i=0;
-double AVE=0,AVE_BF=0,AVE_2=0,AVE_2BF,VAL=0,UVAL=0;
+double AVE=0,AVE_BF=0,AVE_2=0,AVE_2BF,VAL=0,UVAR=0;
 int main(void)
 {
-    double val;
+    double val,var;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
@@ -25,15 +25,15 @@ int main(void)
         fputs("File open error\n",stderr);
         exit(EXIT_FAILURE);
     }
-    fgets(buf,sizeof(buf),fp);
+  
     while(fgets(buf,sizeof(buf),fp) != NULL){
         i++;
-        sscanf(buf,"%d, %lf",&gen,&val);
+        sscanf(buf," %lf",&val);
         AVE_BF=AVE;//VALを求める際に、(N-1)番目の平均を使うためこの位置で(N-1)番目の平均を保存しておく。
         AVE=ave_online(val,AVE,i);//平均を求める
         AVE_2BF=AVE_2;//VALを求める際に、(N-1)番目の２乗の平均を使うためこの位置で(N-1)番目の２乗の平均を保存しておく。
         AVE_2=ave_online(val*val,AVE_2,i);//２乗の平均を求める。
-        VAL=var_online(val,AVE_BF,AVE_2BF,i);//分散を求める
+        var=var_online(val,AVE_BF,AVE_2BF,i);//分散を求める
     }
 
     if(fclose(fp) == EOF){
@@ -41,12 +41,13 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("AVE=%lf\n",AVE);
-    printf("VAL=%lf\n",VAL);
+    printf("AVE=%4.1lf\n",AVE);
+    printf("VAL=%4.1lf\n",var);
 
-    UVAL=(double)i/(double)(i-1)*VAL;//不偏分散を求める。
-
-    printf("UVAL=%lf",UVAL);
+    UVAR=(double)i/(double)(i-1)*var;//不偏分散を求める。
+    
+    printf("est ave=%4.1lf\n",AVE);
+    printf("UVAL=%4.1lf\n",UVAR);
 
     return 0;
 
