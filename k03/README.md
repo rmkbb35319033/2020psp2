@@ -86,20 +86,31 @@ Num of dummy data: 0
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
 
-```
+PS C:\Users\kento\Documents\2020psp2\k03> ./k03 170.8 5.3 5
 ============================================
 template mean: 170.8
-template standard deviation: 5.43
+template standard deviation: 5.30
 Num of dummy data: 5
 ============================================
-162.20
-171.29
-175.88
-168.59
-166.74
-```
+162.40
+171.28
+175.76
+168.64
+166.84
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
+
+PS C:\Users\kento\Documents\2020psp2\k03> ./k03 170.8 5.3 5
+============================================
+template mean: 170.8
+template standard deviation: 5.30
+Num of dummy data: 5
+============================================
+164.60
+171.51
+164.09
+170.46
+167.92
 
 
 
