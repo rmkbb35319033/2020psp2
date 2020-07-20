@@ -59,7 +59,7 @@ int main(void){
         i=0;
 
         while(fgets(buf,sizeof(buf),fp2) != NULL){
-        sscanf(buf,"%ld",&ID);
+        sscanf(buf,"%d",&ID);
         sample[i].ID=ID;
         i++;
     }
