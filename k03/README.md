@@ -71,6 +71,7 @@ dummy=sigma*r_stdnorom()+mu
 の式に代入することで身長を捏造しました。
 
 出力結果
+```
 ============================================
 template mean: 170.8
 template standard deviation: 5.43
@@ -81,11 +82,13 @@ Num of dummy data: 0
 175.87
 168.90
 170.22
+```
 
 ## 入出力結果
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
 
+```
 PS C:\Users\kento\Documents\2020psp2\k03> ./k03 170.8 5.3 5
 ============================================
 template mean: 170.8
@@ -97,9 +100,11 @@ Num of dummy data: 5
 175.76
 168.64
 166.84
+```
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
 
+```
 PS C:\Users\kento\Documents\2020psp2\k03> ./k03 170.8 5.3 5
 ============================================
 template mean: 170.8
@@ -111,7 +116,7 @@ Num of dummy data: 5
 164.09
 170.46
 167.92
-
+```
 
 
 ## 修正履歴
@@ -123,3 +128,6 @@ Num of dummy data: 5
 [comment0720宮下]
 
 課題提出お疲れさまでした！修正点はありません。k03完了です。
+
+[comment #20200721 sonoda]
+- 課題3の完了を確認
