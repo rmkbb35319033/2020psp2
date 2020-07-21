@@ -21,7 +21,7 @@ IDが一致しないたびにkをカウントすることで、最後のif文で
 ## 入出力結果
 
 ・例えば，ID 45318088のデータを調べたいとき，
-
+```
 input the filename1 of sample:c:\Users\kento\Documents\2020psp2\sample\heights.csv
 the filename1 of sample: c:\Users\kento\Documents\2020psp2\sample\heights.csv
 input the filename2 of IDs:c:\Users\kento\Documents\2020psp2\sample\IDs.csv
@@ -35,8 +35,10 @@ the filename2 of sample: c:\Users\kento\Documents\2020psp2\sample\IDs.csv
 ID      >>>45318088
 gender  >>>male
 height  >>>171.10[cm]
+```
 
 ・例えば，ID 999999999のデータを調べたいとき，
+```
 input the filename1 of sample:c:\Users\kento\Documents\2020psp2\sample\heights.csv
 the filename1 of sample: c:\Users\kento\Documents\2020psp2\sample\heights.csv
 input the filename2 of IDs:c:\Users\kento\Documents\2020psp2\sample\IDs.csv
@@ -48,10 +50,13 @@ the filename2 of sample: c:\Users\kento\Documents\2020psp2\sample\IDs.csv
 45322005        45323111        45319099        45318088
 探したいIDを入力してください。>>>999999999
 No data
-
+```
 
 ## 修正履歴
 
 [comment0720宮下]
 
 課題提出お疲れさまでした！修正点はありません。k04完了です。
+
+[comment #20200721 sonoda]
+- 課題4の完了を確認
