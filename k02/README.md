@@ -24,10 +24,14 @@ A県生まれ、B県生まれの男性のデータを標準化し、それぞれ
 L1=L1*p_stdnorm()の式より、尤度を求めました。
 
 入力
+```
 the filename of sample: c:\Users\kento\Documents\2020psp2\sample\heights_male.csv
+```
 出力
+```
 L_A: 0.000006
 L_B: 0.000002
+```
 
 ## 入出力結果
 
@@ -40,3 +44,6 @@ Likelihood for B：
 [20200715comment宮下]
 
 課題提出お疲れさまでした。修正点はありません。k02完了です。
+
+[comment #20200721 sonoda]
+- 課題2の完了を確認
